@@ -3,7 +3,9 @@ const express = require("express")
 const app = express()
 
 app.get("/",(req,res) => {
-    res.send("Hello, World! get")
+    res.json({
+        msg: 'Hello GET'
+    })
 })
 
 app.post("/",(req,res) => {
